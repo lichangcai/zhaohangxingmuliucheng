@@ -1,0 +1,43 @@
+一.先进入到nodejs-src 页面，先跑起来一次：（npm install）
+二.再进入到public那里（cd public）
+三.接着跑起来先（npm install）
+四.再装webpack的命令行（npm install webpack -g）
+五.最后跑起来，（npm start）
+
+
+具体如下
+一、开启服务：
+1.先是对整个项目安装依赖：npm install 
+2.打开public 目录：cd public
+3.对public安装依赖：npm intall 
+5,输入：npm install webpack -g
+4.然后打开package.json文夹；然后可以打开想打开的服务：
+（1）npm run local 打开本地的服务
+（2）npm run start 打开服务端
+
+6.按下：ctrl +c 退出服务；
+
+
+
+
+二、安装nginx:
+1.在项目端根目录下输入：sudo apt-get install nginx 即可以完成安装；
+2.如何开启：
+  2.1 输入cd /etc/nginx
+  2.2 输入 ls
+  2.3 输入  cd sites-enabled
+  2.4 输入 ls 
+  2.7 输入 sudo vim default(输入sudo才可以保存)
+ 2.7 打开nginx.conf 把9001端口复制进去保存
+  2.6 输入 service nginx restart 
+
+ 
+  2.9更改项目的指向路径
+
+
+
+
+注意：package.json在public的目录下
+      nginx.conf 在bin 的目录下
+
+
